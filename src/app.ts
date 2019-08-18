@@ -1,13 +1,15 @@
-import "phaser";
-import StartScene from './scene/StartScene'
+import 'phaser'
+import {w, h, bgColor, title} from './env'
+import GameStart from './scene/GameStart'
+import GamePlay from './scene/GamePlay'
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
-  title: "Starfall",
-  width: 800,
-  height: 600,
+  title: title,
+  width: w,
+  height: h,
   parent: "game",
-  backgroundColor: "#000",
-  scene: [StartScene]
+  backgroundColor: bgColor,
+  scene: [GameStart, GamePlay]
 };
 export class StarfallGame extends Phaser.Game {
   constructor(config: Phaser.Types.Core.GameConfig) {
