@@ -9,7 +9,13 @@ const config: Phaser.Types.Core.GameConfig = {
   height: h,
   parent: "game",
   backgroundColor: bgColor,
-  scene: [GameStart, GamePlay]
+  scene: [
+    GameStart,
+    GamePlay,
+  ],
+  physics: {
+    default: 'arcade'
+  }
 };
 export class StarfallGame extends Phaser.Game {
   constructor(config: Phaser.Types.Core.GameConfig) {
