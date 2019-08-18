@@ -3,6 +3,7 @@ export const h = 800 // 高
 export const bgColor:string = '#6C488B' // 遊戲背景色
 export const title:string = '90sGame' // 遊戲名稱
 export const displayTitle:string = '逃回新手村' // 顯示名稱
+export const startBtn:string = `開始遊戲` // 開始按鈕
 export const gameBgInfo:string = `
 也許是在世界惡意的捉弄下，\n
 一不小心投錯胎的你，\n
